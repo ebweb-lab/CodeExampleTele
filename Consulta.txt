@@ -1,0 +1,15 @@
+CREATE TABLE users(
+id number(3) primary Key,
+nombre varchar(200) NOT NULL,
+apellido varchar(200) NOT NULL,
+estado varchar(200) NOT NULL,
+fragis varchar(200)NOT NULL)
+
+Insert into users(id, nombre, apellido, estado, fragis) VALUES('3', 'Eliza', 'Bueno', 'Developer', 'Si')
+Insert into users(id, nombre, apellido, estado, fragis) VALUES('4', 'Joan', 'Bueno', 'DBA', 'Si')
+
+//Para traer toda la tabla
+Select * from users
+
+//Para traer solo los registro que contengan la palabra indicada
+SELECT * FROM users WHERE nombre IN ('Eliezer')
